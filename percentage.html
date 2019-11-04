@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Makaut Peracenatge  Calculator</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    </head>
+
+    <body>
+        <br>
+        <h1 align="center">MAKAUT DGPA to Percentage Calculator</h1>
+        <hr>
+        <br><br><br>
+        <form align="center">
+                
+            <div class="form-group">
+                        <label>Enter your name : </label>
+                        <input type="text" id="name"/>
+            </div>
+                <br>
+            <div class="form-group">   
+                        <label>Enter your DGPA : </label>
+                         <input type="text" id="num1" />
+            </div>
+                
+                <br>
+            <div class="form-group">
+                    <button class="btn btn-primary" onclick="Calculate()">Calculate </button>
+            </div>
+            <br><br> <br>
+        </form>
+        <br><br> <br><br><br>
+        <footer align="center">
+            <p>Created by: Md Shahnawaz Alam</p>
+            <p>Contact information: <a href="mailto:airalam786@gmail.com">
+            airalam786@gmail.com</a></p>
+          </footer>
+        
+        <script>
+        function Calculate(){
+            var Name = document.getElementById("name").value;
+            var m1 = document.getElementById("num1").value;
+            var cal = (parseFloat(m1) - 0.75) * 10;
+
+
+            
+          if(!isNaN(parseFloat(cal))){
+              alert("Hi "+Name+"!!  your percentage is "+ cal+"%");
+          } else {
+              alert("Please Enter valid DGPA");
+          }
+
+            
+            }
+           
+               
+            
+            
+        
+        </script>
+    </body>
+</html>
